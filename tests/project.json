@@ -1,0 +1,5 @@
+{
+    "projectName": "test",
+    "buildCommand": "python3",
+    "entryPoint": "main.py"
+}
