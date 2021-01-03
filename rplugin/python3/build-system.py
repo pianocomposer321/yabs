@@ -14,7 +14,8 @@ class BuildSystem:
 
         try:
             Popen(["git", "init"])
-            with open(".gitignore") as file:
+
+            with open(".gitignore", "w") as file:
                 text = """
                 .*
                 __pycache__
