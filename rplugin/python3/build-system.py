@@ -17,12 +17,8 @@ class BuildSystem:
 
             pwd = self.vim.eval("getcwd()")
             with open(f"{pwd}/.gitignore", "w") as file:
-                text = """
-                .*
-                __pycache__
-                !/.gitignore
-                """
-                file.writelines(text.split())
+                text = "Helo, world!"
+                file.writelines(text.split("\n"))
         except FileNotFoundError:
             print("Warning: Git not installed")
 
