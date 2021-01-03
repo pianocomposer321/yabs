@@ -15,7 +15,8 @@ class BuildSystem:
         try:
             Popen(["git", "init"])
 
-            with open(".gitignore", "w") as file:
+            pwd = self.vim.eval("getcwd()")
+            with open(f"{pwd}/.gitignore", "w") as file:
                 text = """
                 .*
                 __pycache__
