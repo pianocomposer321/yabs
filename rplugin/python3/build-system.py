@@ -20,8 +20,9 @@ class BuildSystem:
                 text = """
                 .*
                 __pycache__
+                !/.gitignore
                 """
-                file.write(text)
+                file.writelines(text.split())
         except FileNotFoundError:
             print("Warning: Git not installed")
 
