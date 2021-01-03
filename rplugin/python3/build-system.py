@@ -20,7 +20,6 @@ class BuildSystem:
                 text = """
                 .*
                 __pycache__
-                !/.gitignore
                 """
                 file.write(text)
         except FileNotFoundError:
