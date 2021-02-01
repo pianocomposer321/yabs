@@ -1,6 +1,6 @@
-def main():
-    print("Hello, build system!")
+class Test:
+    def __init__(self):
+        self.bar = self.foo
 
-
-if __name__ == "__main__":
-    main()
+    def foo(self):
+        print("Hello, world!")
