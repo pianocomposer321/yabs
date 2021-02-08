@@ -1,0 +1,5 @@
+{
+    "name": "Python",
+    "vars": {},
+    "build_cmd": "python3 #{entry_point:main.py}"
+}
